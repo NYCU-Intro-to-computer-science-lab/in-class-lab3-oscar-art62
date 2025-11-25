@@ -7,7 +7,7 @@ int gcd(int a,int b){
     int ma = (a>b)?a:b;
     int mi = (a<b)?a:b;
     if(ma%mi==0) return mi;
-    return (mi,ma%mi);
+    else return gcd(mi,ma%mi);
 }
 
 int main() {
